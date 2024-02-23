@@ -1,0 +1,35 @@
+version: '3'
+services:
+  postgres-sql:
+    image: postgres:alpine
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: moviles
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 3s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - ./postgres-data1:/home
+  nest:
+    image: d4vecode/nest-back:1.0.1
+    restart: always
+    depends_on:
+      - postgres-sql
+    ports:
+      - "80:3000"
+    environment:
+      DATABASE_HOST: postgres-sql
+      DATABASE_USERNAME: postgres
+      DATABASE_PASSWORD: postgres
+      DATABASE_DB: moviles
+      MODE: dev
+      PORT: 3000
+      APP_SECRET_KEY: __app__secret__key
+      MAIL_SMTP: smtps://botanicalmovil@gmail.com:dghmplmbxdqxhhui@smtp.gmail.com
+      OPENAI_APIKEY: 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
+      
+      

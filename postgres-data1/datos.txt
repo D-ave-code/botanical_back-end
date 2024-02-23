@@ -1,0 +1,128 @@
+
+
+INSERT INTO categories (nombre) VALUES
+  ('Árboles Nativos'),
+  ('Reforestación'),
+  ('Plantas Ornamentales'),
+  ('Frutales'),
+  ('Medicinales');
+
+
+
+INSERT INTO plants (nombre, nombre_c, descripcion, url_foto, "categoriesId") VALUES
+  ('Arrayán', 'Myrcianthes hallii', 'Copa densa con forma de globo, follaje espeso de color verde oscuro y brillante. Puede medir entre 6-10 metros', 'https://www.epn.edu.ec/wp-content/uploads/2019/08/WhatsApp-Image-2019-08-08-at-15.32.23.jpeg', 1),
+  ('Arupo', 'Chionanthus pubescens', 'De atractiva floración rosada. Crece hasta los 10 metros de altura. Lento crecimiento, su primera floración puede tardar entre 6 a 8 años', 'https://www.quitoinforma.gob.ec/wp-content/uploads/2020/08/WhatsApp-Image-2020-08-24-at-3.48.23-PM-e1598303020756-800x445.jpg', 1),
+  ('Magnolia', 'Magnolia grandiflora', 'Majestuoso árbol de follaje persistente que puede sobrepasar los 25 m de altura. La copa amplia, densa y oscura presenta ramas macizas', 'https://2.bp.blogspot.com/_ST_RqnMB-pQ/TUx11BSIK6I/AAAAAAAAANE/eQYrOKFi5a4/s1600/6022+P+Magnolio+110920091161.jpg', 1),
+  ('Pino', 'Pinus radiata', 'Tronco recto y cilíndrico, pueden alcanzar los 20 metros de altura, potencial crecimiento rápido', 'https://inaturalist-open-data.s3.amazonaws.com/photos/15267534/medium.jpg', 1),
+  ('Molle', 'Schinus molle', 'Árbol de 8-10 m de altura. Copa regular oblonga, ramas creciendo hacia el suelo, que hace que la planta se encuentre recubierta totalmente por follaje. ', 'https://herbarivirtual.uib.es/imagen/1408/14724f8c/1140/0/imatge.jpg', 2),
+  
+  ('Geranio', 'Pelargonium × hortorum', 'Es una popular planta con flores conocida por sus brillantes y distintivas flores y sus hojas aromáticas. Pueden crecer entre 1 y 3 pies de altura. Es de crecimiento rápido', 'https://planta.do/cdn/shop/articles/planta-malvon-como-cuidar-del-pelargonium-hortorum-562114_1080x.jpg?v=1697258702', 3),
+  ('Palma', 'Dypsis lutescens', 'Sus hojas de color verde oscuro y amarillo dorado. Puede alcanzar una altura de hasta 2-3 metros. Es de crecimiento lento, se espera que alcance una altura considerable después de los 3 o 4 años', 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/%E6%95%A3%E5%B0%BE%E8%91%B5Dypsis_lutescens_20210511145013_05.jpg/330px-%E6%95%A3%E5%B0%BE%E8%91%B5Dypsis_lutescens_20210511145013_05.jpg', 3),
+  ('Margaritas', 'Argyranthemum frutescens', 'Existe una variada gama de colores. Blanco, rosa, rojo, fucsia y amarillo. Planta resistente a bajas temperaturas. Puede alcanzar 1,5 metros de altura. Crecimiento rápido', 'https://www.cincopinos.cl/cdn/shop/products/1AB91kk6zwb5vmoEiDoV7IabtvaJTKAoY_1_5000x.jpg?v=1655306073', 3),
+  
+
+  ('Tomate de árbol', 'Solanum betaceum', 'Es un arbusto frutal frondoso, llega a medir de 3m a 4m de altura, el fruto mide de 4cm a 8cm de largo, tarda de 3 a 5 meses en dar fruto', 'https://jardines.ec/media/k2/items/cache/4ab4b6df96c060fa741e97b50eafb07c_XL.jpg', 4),
+  ('Granadilla', 'Passiflora ligularis', 'Es una planta alimenticia trepadora, vigorosa y fuerte, puede llegar a medir de 3m a 5m de altura, da fruto a partir de los 2 a 3 años', 'https://jardines.ec/media/k2/items/cache/d9b208614500b6f80739755fd29fad52_XL.jpg', 4),
+  ('Guayaba', 'Psidium guajava', 'Tipo arbusto de follaje, de color verde y frutos amarillos. Puede llegar a medir de 4 a 6 metros de altura.', 'https://jardines.ec/media/k2/items/cache/48ee1e8a0a8f50dce4f8cb9ab418e211_XL.jpg', 4),
+  
+
+  ('Anís', 'Pimpinella anisum', 'Es una planta aromática, las semillas que se utilizan generalmente para aguas aromáticas. Actúa como tónico digestivo, cólicos, dolor de cabeza y huesos', 'https://jardines.ec/media/k2/items/cache/b8cc41f2c23fcd5970f74c3c49efafec_XL.jpg', 5),
+  ('Hierbaluisa', 'Aloysia Citriodora', 'Es un arbusto aromático mediano que crece hasta 3m de altura. Actúa en aparato digestivo, evita la alteración en la digestión y espasmos', 'https://jardines.ec/media/k2/items/cache/52ec984cc72302fd412e2aa145a6526c_XL.jpg', 5),
+  ('Romero', 'Salvia rosmarinus', 'Es un arbusto robusto tipo leñoso y aromático que crece hasta 1m de alto, es utilizado especialmente como cicatrizante, problemas digestivos y la caída del cabello.', 'https://jardines.ec/media/k2/items/cache/5d9bd784bfd234610bf8ba15e7ad6a4e_XL.jpg', 5);
+
+
+
+INSERT INTO prices (precio) VALUES
+  (15.0),
+  (20.0),
+  (25.0);
+
+
+INSERT INTO plans (nombre, precio, descripcion, "pricesId") VALUES
+  ('Plan Básico', 15.0, '3 plantas gratis', 1), 
+  ('Plan Estándar', 20.0, '5 plantas gratis', 2),
+  ('Plan Premium', 25.0, '7 plantas gratis', 3);
+
+
+
+INSERT INTO zones (nombre, descripcion, coordenadas) VALUES
+  ('Zona Quito - Norte', 'Parque Metropolitano Guangüiltagua', '{"Lat": -0.17448374896531718, "Long": -78.46135151892399}'),
+  ('Zona Quito - Centro', 'Parque El Ejido', '{"Lat": -0.20890223819197826, "Long": -78.49862704885395}'),
+  ('Zona Quito - Sur', 'Parque Las Cuadras', '{"Lat": -0.2876752117855663, "Long": -78.54769397953892}');
+
+
+
+INSERT INTO users (token_not, uid, nombre, apellido, email, telefono, f_nac, genero, "plansId") VALUES
+  ('token_not_1', 'uid_1', 'Juan', 'Gómez', 'juan@email.com', '0912345678', '1990-01-01', 'M', 1),
+  ('token_not_2', 'uid_2', 'Ana', 'López', 'ana@email.com', '0923456789', '1992-03-15', 'F', 2),
+  ('token_not_3', 'uid_3', 'Carlos', 'Herrera', 'carlos@email.com', '0934567890', '1985-07-20', 'M', 3),
+  ('token_not_4', 'uid_4', 'Isabel', 'Martínez', 'isabel@email.com', '0945678901', '1988-12-05', 'F', 1),
+  ('token_not_5', 'uid_5', 'Diego', 'Ramírez', 'diego@email.com', '0956789012', '1995-09-10', 'M', 2),
+  ('token_not_6', 'uid_6', 'Laura', 'Fernández', 'laura@email.com', '0967890123', '1980-04-25', 'F', 3),
+  ('token_not_7', 'uid_7', 'Andrés', 'Pérez', 'andres@email.com', '0978901234', '1993-11-30', 'M', 1),
+  ('token_not_8', 'uid_8', 'María', 'Díaz', 'maria@email.com', '0989012345', '1987-06-15', 'F', 2),
+  ('token_not_9', 'uid_9', 'Santiago', 'González', 'santiago@email.com', '0990123456', '1998-02-08', 'M', 3),
+  ('token_not_10', 'uid_10', 'Elena', 'Sánchez', 'elena@email.com', '0910123456', '1983-10-03', 'F', 1),
+  ('token_not_11', 'uid_11', 'Javier', 'Fuentes', 'javier@email.com', '0921234567', '1991-05-18', 'M', 2),
+  ('token_not_12', 'uid_12', 'Carmen', 'Molina', 'carmen@email.com', '0932345678', '1986-08-23', 'F', 3),
+  ('token_not_13', 'uid_13', 'Pedro', 'Lara', 'pedro@email.com', '0943456789', '1996-12-15', 'M', 1),
+  ('token_not_14', 'uid_14', 'Silvia', 'Ríos', 'silvia@email.com', '0954567890', '1989-07-28', 'F', 2),
+  ('token_not_15', 'uid_15', 'Héctor', 'Ortega', 'hector@email.com', '0965678901', '1994-04-01', 'M', 3),
+  ('token_not_16', 'uid_16', 'Raquel', 'Vega', 'raquel@email.com', '0976789012', '1984-09-12', 'F', 1),
+  ('token_not_17', 'uid_17', 'Fernando', 'Reyes', 'fernando@email.com', '0987890123', '1997-02-23', 'M', 2),
+  ('token_not_18', 'uid_18', 'Daniela', 'Hernández', 'daniela@email.com', '0998901234', '1981-06-06', 'F', 3),
+  ('token_not_19', 'uid_19', 'Arturo', 'Cruz', 'arturo@email.com', '0919012345', '1999-11-17', 'M', 1),
+  ('token_not_20', 'uid_20', 'Valeria', 'López', 'valeria@email.com', '0920123456', '1982-04-30', 'F', 2);
+
+
+INSERT INTO managers (nombre, "zonesId") VALUES
+  ('Alejandra Montalvo', 1),
+  ('Danilo Segovia ', 2),
+  ('Pedro José Aguirre', 3),
+  ('Ariana Araúz', 1),
+  ('Nicolás Barrios ', 2),
+  ('Esteban Zambrano', 3);
+
+
+INSERT INTO pplants (apodo, "zonesId", "plantsId", "usersId", "managersId") VALUES
+  ('Pinito', 1, 4, 1, 1),
+  ('Mol le', 1, 5, 1, 4),
+  ('Tomatito', 1, 9, 3, 3),
+  ('Guay', 1, 11, 1, 4),
+  ('Gery', 1, 6, 1, 4),
+  ('PINS', 2, 4, 2, 5),
+  ('Arupazo', 2, 2, 7, 3),
+  ('Thoms Ate', 2, 9, 5, 5),
+  ('Romeo', 2, 14, 4, 2),
+  ('DC', 3, 12, 8, 2),
+  ('Heart_arrayan', 3, 1, 12, 6),
+  ('Joe', 3, 7, 9, 2),
+  ('Hi', 3, 7, 10, 2),
+  ('Luz_arrayan', 3, 1, 11, 6);
+
+
+INSERT INTO hitos (descripcion, des_corta, f_hito, "pplantsId") VALUES
+  ('Segundo riego', 'Riego adicional por la falta de lluvias', '2024-02-20', 10),
+  ('Poda de ramas', 'Mantenimiento', '2024-03-10', 3),
+  ('Fertilización', 'Cuidados extras para recautelar el cuidado y crecimiento', '2024-03-20', 13),
+  ('Control de plagas', 'Acción preventiva contra posibles plagas', '2024-04-01', 4),
+  ('Trasplante a un sitio más grande', 'Necesita más espacio para seguir creciendo', '2024-04-10', 11),
+  ('Segunda cosecha', 'Me encargaré de su otra planta', '2024-04-25', 2),
+  ('Aplicación de compost', 'Se hicieron cuidados correspondientes a la fertilidad', '2024-05-05', 14),
+  ('Control de maleza', 'Se hizo un control, para precauelar el cuidado de la planta', '2024-05-15', 12),
+  ('Tercera cosecha', 'Se realizó la tercera cocecha', '2024-06-01', 4),
+  ('Trasplante de sitio', 'Debido a las fuertes lluvias se movió hacia otro sitio cercano', '2024-06-15', 10),
+  ('Revisión de salud', 'Revisión de la salud de la planta, como control', '2024-07-01', 11),
+  ('Fertilización orgánica', 'Fertilización orgánica y mantenimiento durante épocas de humedad', '2024-07-15', 12),
+  ('Trasplante', 'Trasplante hacia un sitio donde la plana reciba una mayor cantidad de luz', '2024-08-01', 13),
+  ('Cuarta cosecha', 'Esta es su cuarta cosecha, le mantendremos al tanto con brevedad y detalle', '2024-08-15', 5),
+  ('Control de crecimiento', 'Se hace el control de crecimiento y plagas, rutinario', '2024-09-01', 9),
+  ('Poda de flores', 'Poda de flores marchitas rutinario', '2024-09-15', 3),
+  ('Control', 'Tu árbol ya mide más de 90 cm de altura', '2024-10-01', 7),
+  ('Invernadero', 'Invernadero para protección del frío', '2024-10-15', 13),
+  ('Insectos', 'Se realizó un control de Insectos para precautelar la salud de la planta', '2024-11-01', 12),
+  ('Poda de ramas', 'Se realizó una poda de ramas, rutinarias para quitar ramas agonizantes o muertas', '2025-05-15', 2);
+
+
+
+ 
